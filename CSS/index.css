@@ -1,0 +1,216 @@
+* {
+	margin:0;
+	padding:0;
+}
+
+body{
+	font-family: "Trebuchet MS", Helvetica, sans-serif;
+}
+
+/* Barra de Navegação */
+.navbar-bg {
+    background: #294c71;
+}
+
+.navbar-toggler {
+    outline: none;
+    box-shadow: 2px 2px 2px  #000;
+    border: 1px solid #000;
+}
+
+.navbar-toggler.collapsed{
+    box-shadow: 2px 2px 2px #000;
+    border: 1px solid #000;
+}
+
+.navbar-toggler:not(.collapsed) {    
+    box-shadow: none;
+}
+
+.navbar .nav-link {
+    font-size: 0.8em;
+    letter-spacing: 0.1em;
+    margin: 0.2em;
+    padding: 0.5em;
+    color: #fff;
+}
+
+.navbar .nav-link.active, .navbar .nav-link:focus {
+    background: #8b0229;
+    border: 1px solid #8b0229;
+    box-shadow: 2px 2px 2px  rgba(117, 0, 0, 0.637);
+    text-shadow: 3px 1px 10px rgba(255, 255, 255,0.9);
+    border-radius: 5px;
+    color: #fff;
+}
+
+.navbar .nav-link:active {
+    box-shadow: none;
+}
+
+/* ! LOGOS */
+#logo {
+    width: 5em;
+    height: 1.875em;
+}
+
+#detalhe-logo {
+    width: 2em;
+    height: 2em;
+}
+
+
+
+/*! *********** Media Queries **********  */
+
+@media (min-width: 768px) {
+
+    #detalhe-logo {
+        margin-right: 2em;
+    }
+
+    .navbar-bg {
+        background: #294c71 url(/imagens/fundo.png);
+        min-height: 14em;
+    }
+
+    .navbar .nav-item {
+        padding: 1em;
+    }
+
+    .navbar .nav-item {
+        padding: 0.2em;
+    }
+    
+    .navbar .nav-link {
+        background:  url(../imagens/divisor.png) no-repeat left center;
+        display: inline;
+        justify-content: center;
+        align-items: center;
+        font-size: 0.8em;
+        letter-spacing: 0.1em;
+        margin-right: 0.2em;
+        padding: 1em;
+    }
+
+    .navbar .nav-item .nav-link {
+        margin: 0;
+        padding: auto;
+    }
+
+    .navbar .nav-link.active {
+        background: #8b0229;
+        border: 1px solid #8b0229;
+        box-shadow: 2px 2px 2px  rgba(105, 1, 1, 0.9);
+        text-shadow: 3px 1px 10px rgba(255, 255, 255,0.9);
+        border-radius: 5px;
+        padding: 1em;
+        margin: 0.3em;
+        color: #fff;
+    }
+}
+
+@media (min-width: 1000px) {
+    .nav-brand {
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+        margin-top: 0;
+    }
+
+    #logo {
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+        margin-right: 2em;
+        width: 8em;
+        height: 2em;
+    }
+
+    #detalhe-logo {
+        width: 3em;
+        height: 3em;
+    }
+    
+
+    .navbar .nav-item {
+        padding: 0.2em;
+    }
+
+    .navbar .nav-link {
+        background: url(../imagens/divisor.png) no-repeat left center;
+        display: inline;
+        justify-content: center;
+        align-items: center;
+        font-size: 1.2em;
+        letter-spacing: 0.1em;
+        margin-right: 0.2em;
+        padding: 1em;
+    }
+
+    .navbar .nav-link:active{
+        box-shadow: none;
+    }
+
+    .navbar .nav-link:hover {
+        background: #8b0229;
+        border: 1.5px solid #8b0229;
+        border-radius: 5px;
+        box-shadow: 3px 3px 3px  rgba(105, 1, 1, 0.9);
+        text-shadow: 3px 1px 10px rgba(255, 255, 255,0.5);
+        letter-spacing: 0.2em;
+    }
+
+    @media (min-width: 1200px) {
+        #logo {
+            margin-right: 3em;
+            width: 10em;
+            height: 3em;
+        }
+
+        #detalhe-logo {
+            width: 5em;
+            height: 5em;
+        }
+        
+        .navbar .nav-item {
+            padding: 1em;
+        }
+    
+        .navbar .nav-link {
+            background: url(../imagens/divisor.png) no-repeat left center;
+            display: inline;
+            justify-content: center;
+            align-items: center;
+            font-size: 1.2em;
+            letter-spacing: 0.1em;
+            margin-left: 0.2em;
+        }
+
+        .navbar .nav-link:hover {
+            background: #8b0229;
+            border: 2px solid #8b0229;
+            border-radius: 5px;
+            /* box-shadow: 3px 3px 3px  rgba(105, 1, 1, 0.9); */
+            text-shadow: 3px 1px 10px rgba(255, 255, 255,0.5);
+            letter-spacing: 0.2em;
+            padding: 1em 1.5em;
+            transition: all 1s ease;
+        }
+
+        .navbar .nav-link:active{
+            box-shadow: none;
+        }
+
+        .navbar .nav-link.active {
+            background: #8b0229;
+            border: 1.5px solid #8b0229;
+            box-shadow: 3px 3px 3px  rgba(105, 1, 1, 0.9);
+            text-shadow: 3px 1px 10px rgba(255, 255, 255,0.5);
+            border-radius: 5px;
+            padding: 1em 1.5em;
+            margin: 1em;
+        }
+
+    }
+}
