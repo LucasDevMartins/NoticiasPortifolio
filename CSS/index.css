@@ -5,6 +5,7 @@
 
 body{
 	font-family: "Trebuchet MS", Helvetica, sans-serif;
+    overflow-x: hidden;
 }
 
 /* Barra de Navegação */
@@ -33,6 +34,7 @@ body{
     margin: 0.2em;
     padding: 0.5em;
     color: #fff;
+    box-sizing: border-box;
 }
 
 .navbar .nav-link.active, .navbar .nav-link:focus {
@@ -59,10 +61,125 @@ body{
     height: 2em;
 }
 
+/* ! ************** Barra Lateral ****************** */
+.caixa {
+    background: #f3f3f3 url(../imagens/fundo-caixa.png);
+    padding: 0.2em;
+    box-sizing: border-box;
+}
+
+.caixa h2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.3em;
+    background: #294c71;
+    border: 1px solid #000;
+    border-radius: 4px;
+    color: #f3f3f3;
+    padding: 0.1em;
+}
+
+.caixa h3 {
+    font-size: 0.9em;
+    padding: 0.1em;
+}
+
+
+
+.caixa-conteudo a {
+    margin-top: 0;
+    color: #8b0229;
+}
+
+.caixa-conteudo a:hover {
+    color: #e50040;
+    
+}
+
+.destaque {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    font-size: 1em;
+    text-transform: uppercase;
+    padding: 0.3em;
+    border: 1px solid #000;
+    border-radius: 7px;
+    background: #8b0229;
+    color: #f3f3f3;
+}
+
+p {
+    margin-top: 0.1em;
+    font-size: 0.8em;
+}
+
+aside ul {
+    display: block;
+    background: #fff;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+aside ul li {
+    display: flex;
+    border: 1px solid #c3c3c3;
+    border-radius: 7px;
+    width: 100%;
+    padding: 0.5em;
+}
+
+aside ul li a {
+    color: #000;
+    text-decoration: none;
+    letter-spacing: 0.2em;
+    display: block;
+    width: 100%;
+}
+
+aside ul li a:hover {
+	background: #f9f9f9 url(../imagens/marcador.png) no-repeat left center;
+	padding-left: 1.2em;
+	color: #a1a1a1;
+}
+
+/* ! Conteudo */
+
+.caixa-conteudo {
+    display: flex;
+    flex-direction: column;
+    background: #fff;
+}
+
+.caixa-noticias {
+    margin-bottom: 0.1em;
+    padding-top: 1em;
+    border: 1px solid red;
+}
+
+.caixa-noticias ul li {
+    list-style: none;
+}
+
+/* ! Rodapé */
+
+#rodape {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.5em;
+    color: #fff;
+	background: #294c71;
+    padding: 1em;
+}
+
 
 
 /*! *********** Media Queries **********  */
-
+/* ****************** MD ************** */
 @media (min-width: 768px) {
 
     #detalhe-logo {
@@ -108,8 +225,27 @@ body{
         margin: 0.3em;
         color: #fff;
     }
+
+    .caixa h2 {
+        font-size: 1.2em;
+    }
+
+    .caixa h3 {
+        font-size: 0.8em;
+    }
+
+    p {
+        margin-top: 0.1em;
+        font-size: 0.9em;
+    }
+
+    #rodape {
+        font-size: 0.7em;
+        padding: 1.1em;
+    }
 }
 
+/* ***************** XL ************* */
 @media (min-width: 1000px) {
     .nav-brand {
         display: flex;
@@ -122,7 +258,7 @@ body{
         display: flex;
         justify-content: flex-start;
         align-items: flex-start;
-        margin-right: 2em;
+        margin-right: 1em;
         width: 8em;
         height: 2em;
     }
@@ -161,9 +297,20 @@ body{
         letter-spacing: 0.2em;
     }
 
+    p {
+        margin-top: 0.2em;
+        font-size: 1em;
+    }
+
+    #rodape {
+        font-size: 0.8em;
+        padding: 1.2em;
+    }
+
+/* ***************** XLL *************** */
     @media (min-width: 1200px) {
         #logo {
-            margin-right: 3em;
+            margin-right: 1em;
             width: 10em;
             height: 3em;
         }
@@ -212,5 +359,24 @@ body{
             margin: 1em;
         }
 
+        /* !TEXTO */
+
+        .caixa h2 {
+            font-size: 1em;
+        }
+    
+        .caixa h3 {
+            font-size: 0.6em;
+        }
+
+        p {
+            margin-top: 0.4em;
+            font-size: 1.1em;
+        }
+
+        #rodape {
+            font-size: 0.9em;
+            padding: 1.2em;
+        }    
     }
 }
