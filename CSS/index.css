@@ -1,10 +1,10 @@
 * {
-	margin:0;
-	padding:0;
+    margin: 0;
+    padding: 0;
 }
 
-body{
-	font-family: "Trebuchet MS", Helvetica, sans-serif;
+body {
+    font-family: "Trebuchet MS", Helvetica, sans-serif;
     overflow-x: hidden;
 }
 
@@ -15,16 +15,16 @@ body{
 
 .navbar-toggler {
     outline: none;
-    box-shadow: 2px 2px 2px  #000;
-    border: 1px solid #000;
-}
-
-.navbar-toggler.collapsed{
     box-shadow: 2px 2px 2px #000;
     border: 1px solid #000;
 }
 
-.navbar-toggler:not(.collapsed) {    
+.navbar-toggler.collapsed {
+    box-shadow: 2px 2px 2px #000;
+    border: 1px solid #000;
+}
+
+.navbar-toggler:not(.collapsed) {
     box-shadow: none;
 }
 
@@ -37,11 +37,12 @@ body{
     box-sizing: border-box;
 }
 
-.navbar .nav-link.active, .navbar .nav-link:focus {
+.navbar .nav-link.active,
+.navbar .nav-link:focus {
     background: #8b0229;
     border: 1px solid #8b0229;
-    box-shadow: 2px 2px 2px  rgba(117, 0, 0, 0.637);
-    text-shadow: 3px 1px 10px rgba(255, 255, 255,0.9);
+    box-shadow: 2px 2px 2px rgba(117, 0, 0, 0.637);
+    text-shadow: 3px 1px 10px rgba(255, 255, 255, 0.9);
     border-radius: 5px;
     color: #fff;
 }
@@ -49,7 +50,7 @@ body{
 .navbar .nav-link:active {
     box-shadow: none;
 }
-
+/* !!!!! Home */
 /* ! LOGOS */
 #logo {
     width: 5em;
@@ -85,17 +86,6 @@ body{
     padding: 0.1em;
 }
 
-
-
-.caixa-conteudo a {
-    margin-top: 0;
-    color: #8b0229;
-}
-
-.caixa-conteudo a:hover {
-    color: #e50040;
-    
-}
 
 .destaque {
     display: flex;
@@ -141,9 +131,9 @@ aside ul li a {
 }
 
 aside ul li a:hover {
-	background: #f9f9f9 url(../imagens/marcador.png) no-repeat left center;
-	padding-left: 1.2em;
-	color: #a1a1a1;
+    background: #f9f9f9 url(../imagens/marcador.png) no-repeat left center;
+    padding-left: 1.2em;
+    color: #a1a1a1;
 }
 
 /* ! Conteudo */
@@ -154,15 +144,100 @@ aside ul li a:hover {
     background: #fff;
 }
 
-.caixa-noticias {
-    margin-bottom: 0.1em;
-    padding-top: 1em;
-    border: 1px solid red;
+.caixa-conteudo p {
+    margin-bottom: 0;
 }
 
-.caixa-noticias ul li {
-    list-style: none;
+.caixa-conteudo a {
+    margin-top: 0;
+    color: #8b0229;
 }
+
+.caixa-conteudo a:hover {
+    color: #e50040;
+}
+
+/* !Container noiticias e lista de noiticias */
+
+.caixa-noticias {
+    display: flex;
+    flex-direction: column;
+    margin: 0.1em;
+    padding: 1em;
+    background: #f9f9f9
+}
+
+/* *********** Lista Noticias ********** */
+
+.lista-noticias {
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    margin: 0;
+}
+
+.lista-noticias li {
+    padding: 0.1em;
+    list-style: none;
+    border-bottom: 1px solid #c0bfbf;
+}
+
+.lista-noticias li a img {
+    margin: 0.3em;
+    float: left;
+}
+
+.lista-noticias li a {
+    text-decoration: none;
+}
+
+.lista-noticias li a h3 {
+    font-size: 0.9em;
+    color: #3e7ab9;
+    padding: 0;
+}
+
+.lista-noticias li a p {
+    font-size: 0.7em;
+    color: #000;
+}
+
+.lista-noticias li:hover {
+    background: #c0bfbf;
+    cursor: pointer;
+}
+
+
+/* !!!! Nova-Legislação */
+
+.container-legislacao {
+    display: flex;
+    justify-content: center;
+    min-height: 100dvh;
+}
+
+.container-legislacao .caixa-conteudo img {
+    max-width: 100%;
+    object-fit: contain;
+    display: block;
+    margin: 0 auto;
+}
+
+.caixa h4 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1em;
+    margin-top: 1em;
+    background: #294c71;
+    border: 1px solid #000;
+    border-radius: 4px;
+    color: #f3f3f3;
+    padding: 0.3em;
+}
+
+
+
 
 /* ! Rodapé */
 
@@ -172,11 +247,9 @@ aside ul li a:hover {
     align-items: center;
     font-size: 0.5em;
     color: #fff;
-	background: #294c71;
+    background: #294c71;
     padding: 1em;
 }
-
-
 
 /*! *********** Media Queries **********  */
 /* ****************** MD ************** */
@@ -198,9 +271,9 @@ aside ul li a:hover {
     .navbar .nav-item {
         padding: 0.2em;
     }
-    
+
     .navbar .nav-link {
-        background:  url(../imagens/divisor.png) no-repeat left center;
+        background: url(../imagens/divisor.png) no-repeat left center;
         display: inline;
         justify-content: center;
         align-items: center;
@@ -218,8 +291,8 @@ aside ul li a:hover {
     .navbar .nav-link.active {
         background: #8b0229;
         border: 1px solid #8b0229;
-        box-shadow: 2px 2px 2px  rgba(105, 1, 1, 0.9);
-        text-shadow: 3px 1px 10px rgba(255, 255, 255,0.9);
+        box-shadow: 2px 2px 2px rgba(105, 1, 1, 0.9);
+        text-shadow: 3px 1px 10px rgba(255, 255, 255, 0.9);
         border-radius: 5px;
         padding: 1em;
         margin: 0.3em;
@@ -239,9 +312,61 @@ aside ul li a:hover {
         font-size: 0.9em;
     }
 
+    /* !Container noiticias e lista de noiticias */
+
+    .caixa-noticias {
+        margin: 0;
+        padding: 0.8em;
+    }
+
+    /* *********** Lista Noticias ********** */
+
+    .lista-noticias li {
+        padding: 0.5em;
+        margin: 0.1em;
+    }
+
+    .lista-noticias li a img {
+        width: 5.6em;
+        margin: 0.3em;
+        padding: 0.1em;
+    }
+
+    .lista-noticias li a h3 {
+        font-size: 1em;
+        color: #3e7ab9;
+        padding: 0;
+    }
+
+    .lista-noticias li a p {
+        font-size: 0.8em;
+    }
+
     #rodape {
         font-size: 0.7em;
         padding: 1.1em;
+    }
+
+    /* !Pagina Nova Legislação */
+
+    .container-legislacao .caixa-conteudo img {
+        max-width: 50%;
+        object-fit: contain;
+        display: block;
+        margin: 0 auto;
+    }
+
+    .container-legislacao .caixa .destaque {
+        font-size: 2em;
+    }
+
+    .container-legislacao .caixa-conteudo h4 {
+        font-size: 1.5em;
+    }
+
+    .container-legislacao .caixa-conteudo p {
+        font-size: 1.2em;
+        margin-bottom: 1em;
     }
 }
 
@@ -267,7 +392,7 @@ aside ul li a:hover {
         width: 3em;
         height: 3em;
     }
-    
+
 
     .navbar .nav-item {
         padding: 0.2em;
@@ -284,7 +409,7 @@ aside ul li a:hover {
         padding: 1em;
     }
 
-    .navbar .nav-link:active{
+    .navbar .nav-link:active {
         box-shadow: none;
     }
 
@@ -292,8 +417,8 @@ aside ul li a:hover {
         background: #8b0229;
         border: 1.5px solid #8b0229;
         border-radius: 5px;
-        box-shadow: 3px 3px 3px  rgba(105, 1, 1, 0.9);
-        text-shadow: 3px 1px 10px rgba(255, 255, 255,0.5);
+        box-shadow: 3px 3px 3px rgba(105, 1, 1, 0.9);
+        text-shadow: 3px 1px 10px rgba(255, 255, 255, 0.5);
         letter-spacing: 0.2em;
     }
 
@@ -302,12 +427,71 @@ aside ul li a:hover {
         font-size: 1em;
     }
 
-    #rodape {
-        font-size: 0.8em;
-        padding: 1.2em;
+    /* !Container noiticias e lista de noiticias */
+
+    .caixa-noticias {
+        margin: 0;
+        padding: 0.8em;
     }
 
-/* ***************** XLL *************** */
+    /* *********** Lista Noticias ********** */
+
+    .lista-noticias li {
+        padding: 0.7em;
+        margin: 0.5em;
+    }
+
+    
+
+    .lista-noticias li a img {
+        width: 7.8em;
+        margin: 0.5em;
+        padding: 0.1em;
+    }
+
+    .lista-noticias li a h3 {
+        font-size: 1.3em;
+        color: #3e7ab9;
+        padding: 0;
+    }
+
+    .lista-noticias li a p {
+        font-size: 1em;
+    }
+
+    .lista-noticias li:hover {
+        background: #d3d3d3;
+        cursor: pointer;
+    }
+
+    #rodape {
+        font-size: 0.7em;
+        padding: 1.1em;
+    }
+
+    /* !Pagina Nova Legislação */
+
+    .container-legislacao .caixa-conteudo img {
+        max-width: 50%;
+        object-fit: contain;
+        display: block;
+        margin: 0 auto;
+    }
+
+    .container-legislacao .caixa .destaque {
+        font-size: 2.2em;
+    }
+
+    .container-legislacao .caixa-conteudo h4 {
+        font-size: 1.7em;
+    }
+
+    .container-legislacao .caixa-conteudo p {
+        font-size: 1.5em;
+    }
+
+
+    /* ***************** XLL *************** */
     @media (min-width: 1200px) {
         #logo {
             margin-right: 1em;
@@ -319,11 +503,11 @@ aside ul li a:hover {
             width: 5em;
             height: 5em;
         }
-        
+
         .navbar .nav-item {
             padding: 1em;
         }
-    
+
         .navbar .nav-link {
             background: url(../imagens/divisor.png) no-repeat left center;
             display: inline;
@@ -339,21 +523,21 @@ aside ul li a:hover {
             border: 2px solid #8b0229;
             border-radius: 5px;
             /* box-shadow: 3px 3px 3px  rgba(105, 1, 1, 0.9); */
-            text-shadow: 3px 1px 10px rgba(255, 255, 255,0.5);
+            text-shadow: 3px 1px 10px rgba(255, 255, 255, 0.5);
             letter-spacing: 0.2em;
             padding: 1em 1.5em;
             transition: all 1s ease;
         }
 
-        .navbar .nav-link:active{
+        .navbar .nav-link:active {
             box-shadow: none;
         }
 
         .navbar .nav-link.active {
             background: #8b0229;
             border: 1.5px solid #8b0229;
-            box-shadow: 3px 3px 3px  rgba(105, 1, 1, 0.9);
-            text-shadow: 3px 1px 10px rgba(255, 255, 255,0.5);
+            box-shadow: 3px 3px 3px rgba(105, 1, 1, 0.9);
+            text-shadow: 3px 1px 10px rgba(255, 255, 255, 0.5);
             border-radius: 5px;
             padding: 1em 1.5em;
             margin: 1em;
@@ -362,11 +546,11 @@ aside ul li a:hover {
         /* !TEXTO */
 
         .caixa h2 {
-            font-size: 1em;
+            font-size: 1.2em;
         }
-    
+
         .caixa h3 {
-            font-size: 0.6em;
+            font-size: 0.9em;
         }
 
         p {
@@ -377,6 +561,62 @@ aside ul li a:hover {
         #rodape {
             font-size: 0.9em;
             padding: 1.2em;
-        }    
+        }
+
+        /* !Container noiticias e lista de noiticias */
+
+        .caixa-noticias {
+            margin: 0;
+            padding: 0.8em;
+        }
+
+        /* *********** Lista Noticias ********** */
+
+        .lista-noticias li {
+            padding: 0.8em;
+            margin: 0.7em;
+        }
+
+        .lista-noticias li a img {
+            width: 15em;
+            margin: 0.5em;
+            padding: 0.1em;
+        }
+
+        .lista-noticias li a h3 {
+            font-size: 1.5em;
+            color: #3e7ab9;
+            padding: 0;
+        }
+
+        .lista-noticias li a p {
+            font-size: 1em;
+        }
+
+        #rodape {
+            font-size: 0.7em;
+            padding: 1.1em;
+        }
+
+        /* ! Página Nova Legislação */
+
+        .container-legislacao .caixa .destaque {
+            font-size: 2.2em;
+        }
+    
+        .container-legislacao .caixa-conteudo img {
+            max-width: 50%;
+            object-fit: contain;
+            display: block;
+            margin: 0 auto;
+        }
+
+        .container-legislacao .caixa-conteudo h4 {
+            font-size: 1.7em;
+        }
+    
+        .container-legislacao .caixa-conteudo p {
+            font-size: 1.5em;
+        }
     }
 }
