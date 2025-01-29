@@ -237,7 +237,39 @@ aside ul li a:hover {
 }
 
 /* !Página Pets */
+/* ***** Cabeçalho Pet */
 
+#cabecalhoPets h1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+    letter-spacing: 0.3em;
+    background: #294c71;
+    color: #fff;
+    text-shadow: 2px 2px 2px #8b0229;
+    margin-top: 0.5em;
+    padding: 0.2em;
+    border-radius: 7px;
+}
+
+#cabecalhoPets h2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-transform: capitalize;
+    letter-spacing: 0.05em;
+    background: #8b0229;
+    color: #fff;
+    text-shadow: 2px 2px 2px #8b0229;
+    margin-top: 0.5em;
+    padding: 0.1em;
+    border-radius: 7px;
+}
+
+#pitbull {
+    
+}
 
 /* ! Rodapé */
 
