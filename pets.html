@@ -7,9 +7,13 @@
     <title>Notícias cidade - Seu site de notícias</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
 
     <!-- Estilo customizado -->
     <link rel="stylesheet" type="text/css" href="css/index.css">
+    <link rel="stylesheet" type="text/css" href="css/pets.css">
     <!-- Icone -->
     <link rel="icon" type="image/x-icon" href="/imagens/detalhe-topo.png">
 
@@ -19,7 +23,7 @@
 
     <nav class="navbar navbar-expand-md navbar-bg">
         <div class="container-fluid">
-            <a class="navbar-brand" href="#">
+            <a class="navbar-brand" href="/index.html">
                 <img src="/imagens/logo.png" id="logo" alt="Imagem contendo o Texto Notícias da Cidade">
                 <img src="/imagens/detalhe-topo.png" id="detalhe-logo" alt="Continente brasileiro em pontos brancos">
             </a>
@@ -34,253 +38,367 @@
                         <a class="nav-link" aria-current="page" href="index.html">Home</a>
                     </li>
                     <li class="nav-item">
+                        <a class="nav-link" href="pets.html">Pets</a>
+                    </li>
+                    <li class="nav-item">
                         <a class="nav-link" target="_blank" rel="noopener noreferrer"
                             href="https://ge.globo.com/?utm_source=globo.com&utm_medium=header">Esporte</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="santoAndre.html">Saúde</a>
+                        <a class="nav-link" target="_blank" href="https://g1.globo.com/bemestar/">Saúde</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="https://www.cnnbrasil.com.br/tudo-sobre/bolsa-de-valores"
+                        <a class="nav-link" href="https://www.cnnbrasil.com.br/economia/"
                             target="_blank" rel="noopener noreferrer">Economia</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="receitas.html">Receitas</a>
+                        <a class="nav-link" target="_blank" href="https://receitas.globo.com/?utm_source=globo.com&utm_medium=header">Receitas</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="entrevistas.html">Entrevistas</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="pets.html">Pets</a>
                     </li>
                 </ul>
             </div>
         </div>
     </nav>
-    <!-- Inicio Conteudo -->
-    <main class="container" style="border: 1px solid red;">
-        <div class="row">
-            <section class="col-12">
+
+    <main class="container-fluid">
+        <div class="row mt-1">
+            <!-- Inicio Barra Lateral -->
+            <aside class="col-12 col-md-3 mt-2 sticky-top">
+                <button class="btn mt-2 d-md-none" type="button" data-bs-toggle="collapse" data-bs-target="#menuLateral"
+                    aria-expanded="false" aria-controls="menuLateral">
+                    <i class="fa-solid fa-dog"></i>
+                </button>
+                <div class="collapse d-md-block sticky-top" id="menuLateral">
+                    <div class="caixa">
+                        <!-- <h2 class="d-sm-none">Os queridinhos da População</h2> -->
+                        <ul>
+                            <li><a href="pets.html#pitbull">Pitbull</a></li>
+                            <li><a href="pets.html#spitz">Pomerânia (Spitz Alemão Anão)</a></li>
+                            <li><a href="pets.html#rottweiler">Rottweiler</a></li>
+                            <li><a href="pets.html#golden">Golden Retriever</a></li>
+                            <li><a href="pets.html#bulldogFrances">Bulldog Francês</a></li>
+                            <li><a href="pets.html#borderCollie">Border Collie</a></li>
+                            <li><a href="pets.html#shihTzu">Shih Tzu</a></li>
+                            <li><a href="pets.html#pastorMalinois">Pastor Belga Malinois</a></li>
+                        </ul>
+                    </div>
+            </aside>
+            <!-- Fim Barra Leteral -->
+
+            <!-- Inicio Conteúdo -->
+            <section class="col-12 col-md-9 subtitulos">
                 <div id="cabecalhoPets">
-                    <h1>Os queridinhos da Galera</h1>
-    
-                    <h2>Conheça as curiosidades de cada raça!</h2>
+                    <h2>Curiosidades de cada raça!</h2>
                 </div>
                 <div>
                     <h4 id="pitbull">Pitbull</h3>
-                    
-                    <img src="/imagens/pitbull.png" alt="">
-
-                    <div class="row">
-                        <div class="col-4">
-                            <h5>American Pit Bull Terrier</h3>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod nihil maxime accusantium consequatur tempora quam nemo
-                            porro dolor voluptate at! Modi fugit, nobis dolor ullam beatae quod exercitationem accusamus hic?
+                        <div class="container-imagem">
+                            <img class="img-fluid" src="/imagens/pitbull.png" alt="Imagem de um Pitbull">
                         </div>
 
-                        <div class="col-4">
-                            <h5>Principais características</h5>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod nihil maxime accusantium consequatur tempora quam nemo
-                            porro dolor voluptate at! Modi fugit, nobis dolor ullam beatae quod exercitationem accusamus hic?
-                        </div>
+                        <div class="row">
+                            <div class="col-12 col-md-6 col-lg-4">
+                                <h5>American Pit Bull Terrier</h3>
+                                    <p>
+                                        No Brasil, o American Pit Bull Terrier é conhecido pelo apelido de Pitbull. Seu
+                                        verdadeiro nome dá pistas sobre sua origem que aconteceu entre a Europa e os
+                                        EUA. No século XIX, criadores da Inglaterra, Irlanda e Escócia realizaram
+                                        cruzamentos do Bulldog com o Terrier Inglês. Assim surgiu o Bull-and-Terrier,
+                                        uma raça que combinava a esportividade do Terrier e a resistência e força do
+                                        Bulldog. Resistentes e corajosos, eram usados para rinhas de cães, mas sua
+                                        personalidade gentil já indicava que seu futuro seria muito mais nobre.
+                                    </p>
+                            </div>
 
-                        <div class="col-4">
-                            <h5>Pelagem</h5>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod nihil maxime accusantium consequatur tempora quam nemo
-                            porro dolor voluptate at! Modi fugit, nobis dolor ullam beatae quod exercitationem accusamus hic?
+                            <div class="col-12 col-md-6 col-lg-4">
+                                <h5>Principais características</h5>
+                                <p>
+                                    Forte e atlético, o Pitbull Terrier possui uma grande variação de tamanho, podendo
+                                    pesar entre 15kg e 35kg. No entanto, sua altura não muda tanto, variando entre 40 e
+                                    48cm.
+                                </p>
+                            </div>
+
+                            <div class="col-12 col-lg-4">
+                                <h5>Pelagem</h5>
+                                <p>
+                                    Curta, lisa e brilhante, a pelagem do American Pit Bull Terrier apresenta diversas
+                                    tonalidades diferentes. Entre outros padrões de cores, é possível encontrar Pitbull
+                                    preto, Pitbull marrom, Pitbull branco e cinza.
+                                </p>
+                            </div>
                         </div>
-                    </div>
-                    
                 </div>
-
                 <div>
-                    <h4 id="spitz">Pomerânia (Spitz Alemão Anão)</h4>
-                    
-                    <img src="/imagens/lulu.jpg" alt="">
-
-                    <div class="row">
-                        <div class="col-4">
-                            <h5>American Pit Bull Terrier</h3>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod nihil maxime accusantium consequatur tempora quam nemo
-                            porro dolor voluptate at! Modi fugit, nobis dolor ullam beatae quod exercitationem accusamus hic?
+                    <h4 id="spitz">Pomerânia (Spitz Alemão Anão)</h3>
+                        <div class="container-imagem">
+                            <img class="img-fluid" src="/imagens/lulu.jpg" alt="Imagem de um Pitbull">
                         </div>
 
-                        <div class="col-4">
-                            <h5>Principais características</h5>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod nihil maxime accusantium consequatur tempora quam nemo
-                            porro dolor voluptate at! Modi fugit, nobis dolor ullam beatae quod exercitationem accusamus hic?
-                        </div>
+                        <div class="row">
+                            <div class="col-12 col-md-6 col-lg-4">
+                                <h5>Lulu da Pomerânia</h3>
+                                    <p>
+                                        Fofo e muito peludo, o Lulu da Pomerânia é uma das raças preferidas de quem
+                                        gosta de cachorros pequenos e companheiros. Oficialmente chamado de Spitz Alemão
+                                        , possui algumas diferenciações de peso e tamanho, sendo mais comum no Brasil a
+                                        variedade chamada Anã. Continue a leitura e saiba tudo sobre a raça.
+                                    </p>
+                            </div>
 
-                        <div class="col-4">
-                            <h5>Pelagem</h5>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod nihil maxime accusantium consequatur tempora quam nemo
-                            porro dolor voluptate at! Modi fugit, nobis dolor ullam beatae quod exercitationem accusamus hic?
+                            <div class="col-12 col-md-6 col-lg-4">
+                                <h5>Principais características</h5>
+                                <p>
+                                    Spitz Alemão Wolfspitz / Keeshond (Spitz Lobo): 49 cm /- 6 cm.
+                                </p>
+                                <p>
+                                    Spitz Grande: 46 cm /- 4 cm.
+                                </p>
+                                <p>
+                                    Spitz Médio: 34 cm /- 4 cm.
+                                </p>
+                                <p>
+                                    Spitz Pequeno: 26 cm /- 3 cm.
+                                </p>
+                                <p>
+                                    Spitz Alemão Anão: 20 cm /- 2 cm.
+                                </p>
+                            </div>
+
+                            <div class="col-12 col-lg-4">
+                                <h5>Pelagem</h5>
+                                <p>
+                                    Uma verdadeira bolinha de pelos! A pelagem abundante e comprida é uma das principais
+                                    características da raça. Ele pode ser encontrado nas cores preto, castanho, branco,
+                                    laranja e cinzento lobo. Além de combinações entre elas. O Lulu da Pomerânia branco
+                                    é um dos mais famosos. A exuberância de sua aparência se dá por causa da pelagem
+                                    dupla. O pelo externo é longo, liso e fino, enquanto o subpelo é curto, mais grosso
+                                    e semelhante a uma lã. Isso confere o aspecto único e encantador dos Lulus. No
+                                    pescoço, eles ainda possuem uma charmosa juba.
+                                </p>
+                            </div>
                         </div>
-                    </div>
-                    
                 </div>
-
                 <div>
-                    <h4>Rottweiler</h4>
-                    
-                    <img src="/imagens/rottweiler.jpg" alt="">
-
-                    <div class="row">
-                        <div class="col-4">
-                            <h5>American Pit Bull Terrier</h3>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod nihil maxime accusantium consequatur tempora quam nemo
-                            porro dolor voluptate at! Modi fugit, nobis dolor ullam beatae quod exercitationem accusamus hic?
+                    <h4 id="rottweiler">Rottweiler</h3>
+                        <div class="container-imagem">
+                            <img class="img-fluid" src="/imagens/rottweiler.jpg" alt="Imagem de um Pitbull">
                         </div>
 
-                        <div class="col-4">
-                            <h5>Principais características</h5>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod nihil maxime accusantium consequatur tempora quam nemo
-                            porro dolor voluptate at! Modi fugit, nobis dolor ullam beatae quod exercitationem accusamus hic?
-                        </div>
+                        <div class="row">
+                            <div class="col-12 col-md-6 col-lg-4">
+                                <h5>Rottweiler</h3>
+                                    <p>
+                                        Eles podem ser uma excelente companhia para toda a família, sendo amáveis e
+                                        pacíficos com parentes e pessoas próximas do tutor, principalmente se este os
+                                        adotou quando filhotes. Essa raça serviu como exímios cães de guarda e de
+                                        pastoreio pelas legiões romanas, nas conquistas de território para o império
+                                        romano.
+                                    </p>
+                            </div>
 
-                        <div class="col-4">
-                            <h5>Pelagem</h5>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod nihil maxime accusantium consequatur tempora quam nemo
-                            porro dolor voluptate at! Modi fugit, nobis dolor ullam beatae quod exercitationem accusamus hic?
+                            <div class="col-12 col-md-6 col-lg-4">
+                                <h5>Principais características</h5>
+                                <p>
+                                    Os machos possuem de 61 a 68 cm de altura, já as fêmeas, de 56 a 63 cm.
+                                </p>
+                            </div>
+
+                            <div class="col-12 col-lg-4">
+                                <h5>Pelagem</h5>
+                                <p>
+                                    A pelagem do Rottweiler é uma de suas principais características da raça e não
+                                    possui variações: os pelos são pretos com coloração marrom (dourada) em partes
+                                    delimitadas e específicas. São formados por subpelos e pelos de comprimento médio,
+                                    densos e rijos. A perda de pelos é moderada, mas acontece durante todo o ano.
+                                </p>
+                            </div>
                         </div>
-                    </div>
-                    
                 </div>
-
                 <div>
-                    <h4>Golden Retriever</h4>
-                    
-                    <img src="/imagens/golden.jpg" alt="">
+                    <h4 id="golden">Golden Retriever</h3>
 
-                    <div class="row">
-                        <div class="col-4">
-                            <h5>American Pit Bull Terrier</h3>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod nihil maxime accusantium consequatur tempora quam nemo
-                            porro dolor voluptate at! Modi fugit, nobis dolor ullam beatae quod exercitationem accusamus hic?
+                        <div class="container-imagem">
+                            <img class="img-fluid" src="/imagens/golden.jpg" alt="Imagem de um Pitbull">
                         </div>
 
-                        <div class="col-4">
-                            <h5>Principais características</h5>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod nihil maxime accusantium consequatur tempora quam nemo
-                            porro dolor voluptate at! Modi fugit, nobis dolor ullam beatae quod exercitationem accusamus hic?
-                        </div>
+                        <div class="row">
+                            <div class="col-12 col-md-6 col-lg-4">
+                                <h5>Golden Retriever</h3>
+                                    <p>
+                                        Um dos cachorros mais inteligentes do mundo, o Golden Retriever também é
+                                        extremamente dócil e amoroso e conquista todos que cruzam o seu caminho.
+                                        Apaixonado por água e muito ativo, esse animal é leal e apegado aos tutores.
+                                        Ideal para famílias com crianças, ele ama brincar e se divertir com os pequenos
+                                    </p>
+                            </div>
 
-                        <div class="col-4">
-                            <h5>Pelagem</h5>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod nihil maxime accusantium consequatur tempora quam nemo
-                            porro dolor voluptate at! Modi fugit, nobis dolor ullam beatae quod exercitationem accusamus hic?
+                            <div class="col-12 col-md-6 col-lg-4">
+                                <h5>Principais características</h5>
+                                <p>
+                                    A altura dos cães da raça pode variar entre 51cm e 61cm e seu peso vai de 27kg a
+                                    36kg.
+                                </p>
+                            </div>
+
+                            <div class="col-12 col-lg-4">
+                                <h5>Pelagem</h5>
+                                <p>
+                                    Os pelos do Golden Retriever possuem um tom amarelo dourado e são muito densos e de
+                                    tamanho mediano. Eles não costumam formar nós, mas precisam ser escovados com
+                                    frequência.
+                                </p>
+                            </div>
                         </div>
-                    </div>
-                    
                 </div>
-
                 <div>
-                    <h4>Bulldog Francês</h4>
-                    
-                    <img src="/imagens/bulldogFrances.jpeg" alt="">
+                    <h4 id="bulldogFrances">Bulldog Francês</h3>
 
-                    <div class="row">
-                        <div class="col-4">
-                            <h5>American Pit Bull Terrier</h3>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod nihil maxime accusantium consequatur tempora quam nemo
-                            porro dolor voluptate at! Modi fugit, nobis dolor ullam beatae quod exercitationem accusamus hic?
+                        <div class="container-imagem">
+                            <img class="img-fluid" src="/imagens/bulldogFrances.jpeg" alt="Imagem de um Pitbull">
                         </div>
 
-                        <div class="col-4">
-                            <h5>Principais características</h5>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod nihil maxime accusantium consequatur tempora quam nemo
-                            porro dolor voluptate at! Modi fugit, nobis dolor ullam beatae quod exercitationem accusamus hic?
-                        </div>
+                        <div class="row">
+                            <div class="col-12 col-md-6 col-lg-4">
+                                <h5>Bulldog Francês</h3>
+                                    <p>
+                                        Dócil, apegado, fiel ao tutor e algumas vezes um pouco teimoso, esse cãozinho é
+                                        ideal para quem quer ter companhia constante de um animal. Além disso, se dá bem
+                                        com crianças e com brincadeiras entre elas. Outros cães, desde que haja a
+                                        socialização, também são bem-vindos às brincadeiras
+                                    </p>
+                            </div>
 
-                        <div class="col-4">
-                            <h5>Pelagem</h5>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod nihil maxime accusantium consequatur tempora quam nemo
-                            porro dolor voluptate at! Modi fugit, nobis dolor ullam beatae quod exercitationem accusamus hic?
+                            <div class="col-12 col-md-6 col-lg-4">
+                                <h5>Principais características</h5>
+                                <p>
+                                    A altura dos cães da raça pode variar entre 24cm e 35cm e seu peso vai de 8kg a
+                                    14kg.
+                                </p>
+                            </div>
+
+                            <div class="col-12 col-lg-4">
+                                <h5>Pelagem</h5>
+                                <p>
+                                    Com a pelagem curta, é liso, cerrado, macio e muito brilhante.
+                                </p>
+                            </div>
                         </div>
-                    </div>
-                    
                 </div>
-
                 <div>
-                    <h4>Border Collie</h4>
-                    
-                    <img src="/imagens/borderCollie.jpeg" alt="">
+                    <h4 id="borderCollie">Border Collie</h3>
 
-                    <div class="row">
-                        <div class="col-4">
-                            <h5>American Pit Bull Terrier</h3>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod nihil maxime accusantium consequatur tempora quam nemo
-                            porro dolor voluptate at! Modi fugit, nobis dolor ullam beatae quod exercitationem accusamus hic?
+                        <div class="container-imagem">
+                            <img class="img-fluid" src="/imagens/borderCollie.jpeg" alt="Imagem de um Pitbull">
                         </div>
 
-                        <div class="col-4">
-                            <h5>Principais características</h5>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod nihil maxime accusantium consequatur tempora quam nemo
-                            porro dolor voluptate at! Modi fugit, nobis dolor ullam beatae quod exercitationem accusamus hic?
-                        </div>
+                        <div class="row">
+                            <div class="col-12 col-md-6 col-lg-4">
+                                <h5>Border Collie</h3>
+                                    <p>
+                                        Primeiro colocado no Ranking de Inteligência Canina de Stanley Cohen, o Border
+                                        Collie é também alegre e brincalhão. Companheiro e fiel ao tutor, esse cachorro
+                                        ama correr, passear e estar sempre perto de sua família humana. Cheio de energia
+                                        e sempre pronto para todas as atividades, vive em busca de novos desafios e é
+                                        uma ótima escolha para quem quer um animal mais agitado.
+                                    </p>
+                            </div>
 
-                        <div class="col-4">
-                            <h5>Pelagem</h5>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod nihil maxime accusantium consequatur tempora quam nemo
-                            porro dolor voluptate at! Modi fugit, nobis dolor ullam beatae quod exercitationem accusamus hic?
+                            <div class="col-12 col-md-6 col-lg-4">
+                                <h5>Principais características</h5>
+                                <p>
+                                    A altura dos cães da raça pode variar entre 46cm e 56cm e seu peso vai de 13kg a
+                                    20kg.
+                                </p>
+                            </div>
+
+                            <div class="col-12 col-lg-4">
+                                <h5>Pelagem</h5>
+                                <p>
+                                    Densa, lisa e de textura média que pode ser moderadamente longa ou curta. As cores
+                                    da raça podem variar, mas a predominância são os Border Collie preto com manchas
+                                    brancas pelo corpo .
+                                </p>
+                            </div>
                         </div>
-                    </div>
-                    
                 </div>
-
                 <div>
-                    <h4>Shih Tzu</h4>
-                    
-                    <img src="/imagens/shihtzu.jpeg" alt="">
+                    <h4 id="shihTzu">Shih Tzu</h3>
 
-                    <div class="row">
-                        <div class="col-4">
-                            <h5>American Pit Bull Terrier</h3>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod nihil maxime accusantium consequatur tempora quam nemo
-                            porro dolor voluptate at! Modi fugit, nobis dolor ullam beatae quod exercitationem accusamus hic?
+                        <div class="container-imagem">
+                            <img class="img-fluid" src="/imagens/shihtzu.jpeg" alt="Imagem de um Pitbull">
                         </div>
 
-                        <div class="col-4">
-                            <h5>Principais características</h5>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod nihil maxime accusantium consequatur tempora quam nemo
-                            porro dolor voluptate at! Modi fugit, nobis dolor ullam beatae quod exercitationem accusamus hic?
-                        </div>
+                        <div class="row">
+                            <div class="col-12 col-md-6 col-lg-4">
+                                <h5>Shih Tzu</h3>
+                                    <p>
+                                        O Shih Tzu é um cãozinho muito divertido, companheiro e alegre! Apaixonado pela
+                                        família, esses cachorros são muito próximos e estão sempre dispostos a viver uma
+                                        aventura. Ainda que não sejam atletas, os pets vão topar qualquer desafio para
+                                        ficar o mais pertinho possível dos seus amados tutores.
+                                    </p>
+                            </div>
 
-                        <div class="col-4">
-                            <h5>Pelagem</h5>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod nihil maxime accusantium consequatur tempora quam nemo
-                            porro dolor voluptate at! Modi fugit, nobis dolor ullam beatae quod exercitationem accusamus hic?
+                            <div class="col-12 col-md-6 col-lg-4">
+                                <h5>Principais características</h5>
+                                <p>
+                                    A altura dos cães da raça pode variar entre 20cm e 28cm e seu peso vai de 4kg a
+                                    8kg.
+                                </p>
+                            </div>
+
+                            <div class="col-12 col-lg-4">
+                                <h5>Pelagem</h5>
+                                <p>
+                                    A pelagem do Shih Tzu é uma das suas marcas registradas. O pelo é longo, denso e
+                                    liso, ou com uma ligeira ondulação. O subpelo é moderado.
+                                </p>
+                            </div>
                         </div>
-                    </div>
-                    
                 </div>
-
                 <div>
-                    <h4>Pastor Belga Malinois</h4>
-                    
-                    <img src="/imagens/malinois.jpeg" alt="">
+                    <h4 id="pastorMalinois">Pastor Belga Malinois</h3>
 
-                    <div class="row">
-                        <div class="col-4">
-                            <h5>American Pit Bull Terrier</h3>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod nihil maxime accusantium consequatur tempora quam nemo
-                            porro dolor voluptate at! Modi fugit, nobis dolor ullam beatae quod exercitationem accusamus hic?
+                        <div class="container-imagem">
+                            <img class="img-fluid" src="/imagens/malinois.jpeg" alt="Imagem de um Pitbull">
                         </div>
 
-                        <div class="col-4">
-                            <h5>Principais características</h5>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod nihil maxime accusantium consequatur tempora quam nemo
-                            porro dolor voluptate at! Modi fugit, nobis dolor ullam beatae quod exercitationem accusamus hic?
-                        </div>
+                        <div class="row">
+                            <div class="col-12 col-md-6 col-lg-4">
+                                <h5>Pastor Belga Malinois</h3>
+                                    <p>
+                                        Seu porte elegante e sua pelagem vasta e brilhante, chamam a atenção para o
+                                        Pastor Belga. Além da beleza física, o Pastor Belga ainda possui uma
+                                        personalidade leal, tranquila e companheira. Um ótimo cão para companhia da
+                                        família. Continue a leitura e saiba tudo sobre a raça.
+                                    </p>
+                            </div>
 
-                        <div class="col-4">
-                            <h5>Pelagem</h5>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod nihil maxime accusantium consequatur tempora quam nemo
-                            porro dolor voluptate at! Modi fugit, nobis dolor ullam beatae quod exercitationem accusamus hic?
+                            <div class="col-12 col-md-6 col-lg-4">
+                                <h5>Principais características</h5>
+                                <p>
+                                    A altura dos cães da raça pode variar entre 55cm e 66cm e seu peso vai de 20kg a
+                                    30kg.
+                                </p>
+                            </div>
+
+                            <div class="col-12 col-lg-4">
+                                <h5>Pelagem</h5>
+                                <p>
+                                    Cada variedade do Pastor Belga apresenta uma pelagem de aspecto e coloração
+                                    diferentes. O Groenendael e Tervuren possuem pelos longos, volumosos e lisos. O
+                                    Malinois tem a pelagem curta e lisa. Já o Laekenois apresenta pelo grosso e áspero
+                                    podendo ser médio ou curto. Os pastores Tervuren, Malinois e Laekenois apresentam
+                                    diversos tons de castanho, enquanto o Groenendael é predominantemente preto.
+                                </p>
+                            </div>
                         </div>
-                    </div>
-                    
                 </div>
+
+
 
             </section>
         </div>
@@ -301,6 +419,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>
+    <script src="/Js/index.js"></script>
 </body>
 
 </html>

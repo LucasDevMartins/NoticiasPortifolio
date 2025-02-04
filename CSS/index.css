@@ -3,6 +3,10 @@
     padding: 0;
 }
 
+html {
+
+}
+
 body {
     font-family: "Trebuchet MS", Helvetica, sans-serif;
     overflow-x: hidden;
@@ -29,10 +33,10 @@ body {
 }
 
 .navbar .nav-link {
-    font-size: 0.8em;
-    letter-spacing: 0.1em;
-    margin: 0.2em;
-    padding: 0.5em;
+    font-size: 0.8rem;
+    letter-spacing: 0.1rem;
+    margin: 0.2rem;
+    padding: 0.5rem;
     color: #fff;
     box-sizing: border-box;
 }
@@ -53,19 +57,19 @@ body {
 /* !!!!! Home */
 /* ! LOGOS */
 #logo {
-    width: 5em;
-    height: 1.875em;
+    width: 5rem;
+    height: 1.875rem;
 }
 
 #detalhe-logo {
-    width: 2em;
-    height: 2em;
+    width: 2rem;
+    height: 2rem;
 }
 
 /* ! ************** Barra Lateral ****************** */
 .caixa {
     background: #f3f3f3 url(../imagens/fundo-caixa.png);
-    padding: 0.2em;
+    padding: 0.2rem;
     box-sizing: border-box;
 }
 
@@ -73,17 +77,17 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 1.3em;
+    font-size: 1.3rem;
     background: #294c71;
     border: 1px solid #000;
     border-radius: 4px;
     color: #f3f3f3;
-    padding: 0.1em;
+    padding: 0.1rem;
 }
 
 .caixa h3 {
-    font-size: 0.9em;
-    padding: 0.1em;
+    font-size: 0.9rem;
+    padding: 0.1rem;
 }
 
 
@@ -92,9 +96,9 @@ body {
     justify-content: center;
     align-items: center;
     box-sizing: border-box;
-    font-size: 1em;
+    font-size: 1rem;
     text-transform: uppercase;
-    padding: 0.3em;
+    padding: 0.3rem;
     border: 1px solid #000;
     border-radius: 7px;
     background: #8b0229;
@@ -102,8 +106,8 @@ body {
 }
 
 p {
-    margin-top: 0.1em;
-    font-size: 0.8em;
+    margin-top: 0.1rem;
+    font-size: 0.8rem;
 }
 
 aside ul {
@@ -119,20 +123,20 @@ aside ul li {
     border: 1px solid #c3c3c3;
     border-radius: 7px;
     width: 100%;
-    padding: 0.5em;
+    padding: 0.5rem;
 }
 
 aside ul li a {
     color: #000;
     text-decoration: none;
-    letter-spacing: 0.2em;
+    letter-spacing: 0.2rem;
     display: block;
     width: 100%;
 }
 
 aside ul li a:hover {
     background: #f9f9f9 url(../imagens/marcador.png) no-repeat left center;
-    padding-left: 1.2em;
+    padding-left: 1.2rem;
     color: #a1a1a1;
 }
 
@@ -162,8 +166,8 @@ aside ul li a:hover {
 .caixa-noticias {
     display: flex;
     flex-direction: column;
-    margin: 0.1em;
-    padding: 1em;
+    margin: 0.1rem;
+    padding: 1rem;
     background: #f9f9f9
 }
 
@@ -177,13 +181,13 @@ aside ul li a:hover {
 }
 
 .lista-noticias li {
-    padding: 0.1em;
+    padding: 0.1rem;
     list-style: none;
     border-bottom: 1px solid #c0bfbf;
 }
 
 .lista-noticias li a img {
-    margin: 0.3em;
+    margin: 0.3rem;
     float: left;
 }
 
@@ -192,13 +196,13 @@ aside ul li a:hover {
 }
 
 .lista-noticias li a h3 {
-    font-size: 0.9em;
+    font-size: 0.9rem;
     color: #3e7ab9;
     padding: 0;
 }
 
 .lista-noticias li a p {
-    font-size: 0.7em;
+    font-size: 0.7rem;
     color: #000;
 }
 
@@ -227,8 +231,8 @@ aside ul li a:hover {
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 1em;
-    margin-top: 1em;
+    font-size: 1rem;
+    margin-top: 1rem;
     background: #294c71;
     border: 1px solid #000;
     border-radius: 4px;
@@ -236,40 +240,7 @@ aside ul li a:hover {
     padding: 0.3em;
 }
 
-/* !Página Pets */
-/* ***** Cabeçalho Pet */
 
-#cabecalhoPets h1 {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-transform: uppercase;
-    letter-spacing: 0.3em;
-    background: #294c71;
-    color: #fff;
-    text-shadow: 2px 2px 2px #8b0229;
-    margin-top: 0.5em;
-    padding: 0.2em;
-    border-radius: 7px;
-}
-
-#cabecalhoPets h2 {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-transform: capitalize;
-    letter-spacing: 0.05em;
-    background: #8b0229;
-    color: #fff;
-    text-shadow: 2px 2px 2px #8b0229;
-    margin-top: 0.5em;
-    padding: 0.1em;
-    border-radius: 7px;
-}
-
-#pitbull {
-    
-}
 
 /* ! Rodapé */
 
@@ -277,10 +248,11 @@ aside ul li a:hover {
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 0.5em;
+    font-size: 0.5rem;
     color: #fff;
     background: #294c71;
-    padding: 1em;
+    padding: 1rem;
+    margin-top: 1rem;
 }
 
 
@@ -305,20 +277,20 @@ aside ul li a:hover {
 @media (min-width: 768px) {
 
     #detalhe-logo {
-        margin-right: 2em;
+        margin-right: 2rem;
     }
 
     .navbar-bg {
         background: #294c71 url(/imagens/fundo.png);
-        min-height: 14em;
+        min-height: 14rem;
     }
 
     .navbar .nav-item {
-        padding: 1em;
+        padding: 1rem;
     }
 
     .navbar .nav-item {
-        padding: 0.2em;
+        padding: 0.2rem;
     }
 
     .navbar .nav-link {
@@ -326,10 +298,10 @@ aside ul li a:hover {
         display: inline;
         justify-content: center;
         align-items: center;
-        font-size: 0.8em;
-        letter-spacing: 0.1em;
-        margin-right: 0.2em;
-        padding: 1em;
+        font-size: 0.8rem;
+        letter-spacing: 0.1rem;
+        margin-right: 0.2rem;
+        padding: 1rem;
     }
 
     .navbar .nav-item .nav-link {
@@ -343,57 +315,57 @@ aside ul li a:hover {
         box-shadow: 2px 2px 2px rgba(105, 1, 1, 0.9);
         text-shadow: 3px 1px 10px rgba(255, 255, 255, 0.9);
         border-radius: 5px;
-        padding: 1em;
-        margin: 0.3em;
+        padding: 1rem;
+        margin: 0.3rem;
         color: #fff;
     }
 
     .caixa h2 {
-        font-size: 1.2em;
+        font-size: 1.2rem;
     }
 
     .caixa h3 {
-        font-size: 0.8em;
+        font-size: 0.8rem;
     }
 
     p {
-        margin-top: 0.1em;
-        font-size: 0.9em;
+        margin-top: 0.1rem;
+        font-size: 0.9rem;
     }
 
     /* !Container noiticias e lista de noiticias */
 
     .caixa-noticias {
         margin: 0;
-        padding: 0.8em;
+        padding: 0.8rem;
     }
 
     /* *********** Lista Noticias ********** */
 
     .lista-noticias li {
-        padding: 0.5em;
-        margin: 0.1em;
+        padding: 0.5rem;
+        margin: 0.1rem;
     }
 
     .lista-noticias li a img {
-        width: 5.6em;
-        margin: 0.3em;
-        padding: 0.1em;
+        width: 5.6rem;
+        margin: 0.3rem;
+        padding: 0.1rem;
     }
 
     .lista-noticias li a h3 {
-        font-size: 1em;
+        font-size: 1rem;
         color: #3e7ab9;
         padding: 0;
     }
 
     .lista-noticias li a p {
-        font-size: 0.8em;
+        font-size: 0.8rem;
     }
 
     #rodape {
-        font-size: 0.7em;
-        padding: 1.1em;
+        font-size: 0.7rem;
+        padding: 1.1rem;
     }
 
     /* !Pagina Nova Legislação */
@@ -406,16 +378,16 @@ aside ul li a:hover {
     }
 
     .container-legislacao .caixa .destaque {
-        font-size: 2em;
+        font-size: 2rem;
     }
 
     .container-legislacao .caixa-conteudo h4 {
-        font-size: 1.5em;
+        font-size: 1.5rem;
     }
 
     .container-legislacao .caixa-conteudo p {
-        font-size: 1.2em;
-        margin-bottom: 1em;
+        font-size: 1.2rem;
+        margin-bottom: 1rem;
     }
 }
 
@@ -432,19 +404,19 @@ aside ul li a:hover {
         display: flex;
         justify-content: flex-start;
         align-items: flex-start;
-        margin-right: 1em;
-        width: 8em;
-        height: 2em;
+        margin-right: 1rem;
+        width: 8rem;
+        height: 2rem;
     }
 
     #detalhe-logo {
-        width: 3em;
-        height: 3em;
+        width: 3rem;
+        height: 3rem;
     }
 
 
     .navbar .nav-item {
-        padding: 0.2em;
+        padding: 0.2rem;
     }
 
     .navbar .nav-link {
@@ -452,10 +424,10 @@ aside ul li a:hover {
         display: inline;
         justify-content: center;
         align-items: center;
-        font-size: 1.2em;
-        letter-spacing: 0.1em;
-        margin-right: 0.2em;
-        padding: 1em;
+        font-size: 1.2rem;
+        letter-spacing: 0.1rem;
+        margin-right: 0.2rem;
+        padding: 1rem;
     }
 
     .navbar .nav-link:active {
@@ -468,44 +440,44 @@ aside ul li a:hover {
         border-radius: 5px;
         box-shadow: 3px 3px 3px rgba(105, 1, 1, 0.9);
         text-shadow: 3px 1px 10px rgba(255, 255, 255, 0.5);
-        letter-spacing: 0.2em;
+        letter-spacing: 0.2rem;
     }
 
     p {
-        margin-top: 0.2em;
-        font-size: 1em;
+        margin-top: 0.2rem;
+        font-size: 1rem;
     }
 
     /* !Container noiticias e lista de noiticias */
 
     .caixa-noticias {
         margin: 0;
-        padding: 0.8em;
+        padding: 0.8rem;
     }
 
     /* *********** Lista Noticias ********** */
 
     .lista-noticias li {
-        padding: 0.7em;
-        margin: 0.5em;
+        padding: 0.7rem;
+        margin: 0.5rem;
     }
 
     
 
     .lista-noticias li a img {
-        width: 7.8em;
-        margin: 0.5em;
-        padding: 0.1em;
+        width: 7.8rem;
+        margin: 0.5rem;
+        padding: 0.1rem;
     }
 
     .lista-noticias li a h3 {
-        font-size: 1.3em;
+        font-size: 1.3rem;
         color: #3e7ab9;
         padding: 0;
     }
 
     .lista-noticias li a p {
-        font-size: 1em;
+        font-size: 1rem;
     }
 
     .lista-noticias li:hover {
@@ -514,8 +486,8 @@ aside ul li a:hover {
     }
 
     #rodape {
-        font-size: 0.7em;
-        padding: 1.1em;
+        font-size: 0.7rem;
+        padding: 1.1rem;
     }
 
     /* !Pagina Nova Legislação */
@@ -528,33 +500,33 @@ aside ul li a:hover {
     }
 
     .container-legislacao .caixa .destaque {
-        font-size: 2.2em;
+        font-size: 2.2rem;
     }
 
     .container-legislacao .caixa-conteudo h4 {
-        font-size: 1.7em;
+        font-size: 1.7rem;
     }
 
     .container-legislacao .caixa-conteudo p {
-        font-size: 1.5em;
+        font-size: 1.5rem;
     }
 
 
     /* ***************** XLL *************** */
     @media (min-width: 1200px) {
         #logo {
-            margin-right: 1em;
-            width: 10em;
-            height: 3em;
+            margin-right: 1rem;
+            width: 10rem;
+            height: 3rem;
         }
 
         #detalhe-logo {
-            width: 5em;
-            height: 5em;
+            width: 5rem;
+            height: 5rem;
         }
 
         .navbar .nav-item {
-            padding: 1em;
+            padding: 1rem;
         }
 
         .navbar .nav-link {
@@ -562,9 +534,9 @@ aside ul li a:hover {
             display: inline;
             justify-content: center;
             align-items: center;
-            font-size: 1.2em;
-            letter-spacing: 0.1em;
-            margin-left: 0.2em;
+            font-size: 1.2rem;
+            letter-spacing: 0.1rem;
+            margin-left: 0.2rem;
         }
 
         .navbar .nav-link:hover {
@@ -573,8 +545,8 @@ aside ul li a:hover {
             border-radius: 5px;
             /* box-shadow: 3px 3px 3px  rgba(105, 1, 1, 0.9); */
             text-shadow: 3px 1px 10px rgba(255, 255, 255, 0.5);
-            letter-spacing: 0.2em;
-            padding: 1em 1.5em;
+            letter-spacing: 0.2rem;
+            padding: 1rem 1.5rem;
             transition: all 1s ease;
         }
 
@@ -588,69 +560,69 @@ aside ul li a:hover {
             box-shadow: 3px 3px 3px rgba(105, 1, 1, 0.9);
             text-shadow: 3px 1px 10px rgba(255, 255, 255, 0.5);
             border-radius: 5px;
-            padding: 1em 1.5em;
-            margin: 1em;
+            padding: 1em 1.5rem;
+            margin: 1rem;
         }
 
         /* !TEXTO */
 
         .caixa h2 {
-            font-size: 1.2em;
+            font-size: 1.2rem;
         }
 
         .caixa h3 {
-            font-size: 0.9em;
+            font-size: 0.9rem;
         }
 
         p {
-            margin-top: 0.4em;
-            font-size: 1.1em;
+            margin-top: 0.4rem;
+            font-size: 1.1rem;
         }
 
         #rodape {
-            font-size: 0.9em;
-            padding: 1.2em;
+            font-size: 0.9rem;
+            padding: 1.2rem;
         }
 
         /* !Container noiticias e lista de noiticias */
 
         .caixa-noticias {
             margin: 0;
-            padding: 0.8em;
+            padding: 0.8rem;
         }
 
         /* *********** Lista Noticias ********** */
 
         .lista-noticias li {
-            padding: 0.8em;
-            margin: 0.7em;
+            padding: 0.8rem;
+            margin: 0.7rem;
         }
 
         .lista-noticias li a img {
-            width: 15em;
-            margin: 0.5em;
-            padding: 0.1em;
+            width: 15rem;
+            margin: 0.5rem;
+            padding: 0.1rem;
         }
 
         .lista-noticias li a h3 {
-            font-size: 1.5em;
+            font-size: 1.5rem;
             color: #3e7ab9;
             padding: 0;
         }
 
         .lista-noticias li a p {
-            font-size: 1em;
+            font-size: 1rem;
         }
 
         #rodape {
-            font-size: 0.7em;
-            padding: 1.1em;
+            font-size: 0.7rem;
+            padding: 1.1rem;
         }
 
         /* ! Página Nova Legislação */
 
         .container-legislacao .caixa .destaque {
-            font-size: 2.2em;
+            font-size: 2.2rem;
         }
     
         .container-legislacao .caixa-conteudo img {
@@ -661,11 +633,11 @@ aside ul li a:hover {
         }
 
         .container-legislacao .caixa-conteudo h4 {
-            font-size: 1.7em;
+            font-size: 1.7rem;
         }
     
         .container-legislacao .caixa-conteudo p {
-            font-size: 1.5em;
+            font-size: 1.5rem;
         }
     }
 }
