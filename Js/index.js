@@ -8,12 +8,15 @@ document.addEventListener("DOMContentLoaded", function () {
 
 // Verificação de qual página esta ativa
 document.addEventListener("DOMContentLoaded", function () {
-    let paginaAtiva = window.location.pathname.split("/").pop();
-    let navLinks = document.querySelectorAll('.nav-link');
+
+    let paginaAtiva = window.location.pathname.split("/").pop();    
+    let navLinks = document.querySelectorAll('.nav-link');   
 
     navLinks.forEach(function(link) {
-        if (link.getAttribute('href') === paginaAtiva) {
-            link.classList.add('active');
+        let href = link.getAttribute('href').replace('./', '');
+        
+        if (href === paginaAtiva) {
+            link.classList.add('active');           
         } else {
             link.classList.remove('active');
         }

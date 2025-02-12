@@ -4,7 +4,7 @@
 }
 
 html {
-
+    font-size: 16px;
 }
 
 body {
@@ -240,7 +240,19 @@ aside ul li a:hover {
     padding: 0.3em;
 }
 
+/* !Entrevistas */
+h6 {
+    font-style: italic;
+    font-weight: bolder;
+    background: #c3c3c3;
+    padding: 0.2rem;
+}
 
+h6 span {
+    text-decoration: underline;
+    font-style: normal;
+    font-weight: normal;
+}
 
 /* ! Rodapé */
 
@@ -281,7 +293,7 @@ aside ul li a:hover {
     }
 
     .navbar-bg {
-        background: #294c71 url(/imagens/fundo.png);
+        background: #294c71 url(../imagens/fundo.png);
         min-height: 14rem;
     }
 

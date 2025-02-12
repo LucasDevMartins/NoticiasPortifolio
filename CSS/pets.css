@@ -107,6 +107,11 @@ html {
     .img-fluid {
         width: 40rem;
     }
+
+    .navbar-bg {
+        min-height: 12rem;
+    }
+
 }
 
 @media (min-width: 1000px) {
